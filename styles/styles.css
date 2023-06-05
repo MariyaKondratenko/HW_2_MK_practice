@@ -1,0 +1,27 @@
+.wrapper {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrapper1 {
+  font-family: "Times New Roman", Times, serif;
+  display: row;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}

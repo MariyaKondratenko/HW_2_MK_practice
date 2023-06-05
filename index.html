@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV_Kondratenko</title>
+    <title>HW_2_CV_practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./styles/styles.css"
+    />
   </head>
+
   <body>
-    <h3>Mariia Kondratenko</h3>
-    <p>profile</p>
-    <img src="photo_resume_sm.jpg" />
-    <hr />
-    <div>
-      <h2>Details</h2>
-      <p>Göteborg</p>
-      <p>Sweden</p>
-      <p>+46704327422</p>
-      <p>izumynka7@meta.ua</p>
+    <div class="wrapper">
+      <img src="./assets/images/photo_resume_sm.jpg" alt="personal photo" />
+      <h2 id="output">Mariia Kondratenko</h2>
       <a href="https://www.facebook.com/profile.php?id=100004864118299"
         >facebook</a
       >
-      <br />
+
       <a href="https://www.instagram.com/rodzynka_m/">instagram</a>
+
+      <div class="wrapper1">
+        <h3>Details:</h3>
+        <p>
+          Göteborg <br />+46704327422 <br />
+          izumynka7@meta.ua
+        </p>
+      </div>
+      <button
+        onclick="doSomething()"
+        style="background-color: #350f3a; color: aliceblue"
+      >
+        PROFILE
+      </button>
+      <p id="test"></p>
+      <script>
+        function doSomething() {
+          document.getElementById("test").innerHTML = "See Details Below";
+        }
+      </script>
     </div>
-    <hr />
-    <h3>Employment History</h3>
-    <div>
+
+    <script src="./scripts/index.js"></script>
+
+    <div class="wrapper">
+      <h3>Employment History</h3>
       <ol>
         <li>
           <h4>Reservation manager, Eko-resort IZKI</h4>
@@ -33,27 +55,17 @@
         </li>
         <li>
           <h4>Hotel administrator, Patkovski hotel</h4>
-          <p>november 2010 - MARCH 2012</p>
+          <p>NOVEMBER 2010 - MARCH 2012</p>
         </li>
         <li>
-          <h4>Hotel administrator, Gorgany Hotel & Spa</h4>
-          <p>DECEMBER 2012 - Oktober 2017</p>
+          <h4>Hotel administrator, Gorgany Hotel [&] Spa</h4>
+          <p>DECEMBER 2012 - OKTOBER 2017</p>
         </li>
         <li>
           <h4>Night auditor, Radisson Blu Resort, Bukovel</h4>
-          <p>DECEMBER 2017 - Oktober 2018</p>
+          <p>DECEMBER 2017 - OKTOBER 2018</p>
         </li>
       </ol>
-    </div>
-    <hr />
-    <h3>Languages</h3>
-    <div>
-      <ul>
-        <li>Ukrainian С2</li>
-        <li>Russian C2</li>
-        <li>English B2</li>
-        <li>Swedish A1</li>
-      </ul>
     </div>
   </body>
 </html>
